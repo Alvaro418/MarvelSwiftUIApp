@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E13C9AE257453DE0057B3E7 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13C9AD257453DE0057B3E7 /* AuthenticationTests.swift */; };
+		2E13C9C0257457770057B3E7 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13C9BF257457770057B3E7 /* URLTests.swift */; };
 		2E18A346256E8C9D00A15AB6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E18A345256E8C9D00A15AB6 /* Launch Screen.storyboard */; };
 		2E18A347256E8C9D00A15AB6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E18A345256E8C9D00A15AB6 /* Launch Screen.storyboard */; };
 		2E2786FB256710530019B952 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2786FA256710530019B952 /* Tests_iOS.swift */; };
@@ -58,6 +59,13 @@
 			remoteGlobalIDString = 2E2786E5256710530019B952;
 			remoteInfo = "marvelapp (pro)";
 		};
+		2E13C9C2257457770057B3E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E2786DA256710520019B952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E2786E5256710530019B952;
+			remoteInfo = "marvelapp (pro)";
+		};
 		2E2786F7256710530019B952 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2E2786DA256710520019B952 /* Project object */;
@@ -71,6 +79,9 @@
 		2E13C9AB257453DE0057B3E7 /* AuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E13C9AD257453DE0057B3E7 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 		2E13C9AF257453DE0057B3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E13C9BD257457770057B3E7 /* URLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E13C9BF257457770057B3E7 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
+		2E13C9C1257457770057B3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E18A345256E8C9D00A15AB6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2E2786DF256710520019B952 /* marvelappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marvelappApp.swift; sourceTree = "<group>"; };
 		2E2786E0256710520019B952 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -97,6 +108,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		2E13C9A8257453DE0057B3E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E13C9BA257457770057B3E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,6 +154,15 @@
 			path = AuthenticationTests;
 			sourceTree = "<group>";
 		};
+		2E13C9BE257457770057B3E7 /* URLTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E13C9BF257457770057B3E7 /* URLTests.swift */,
+				2E13C9C1257457770057B3E7 /* Info.plist */,
+			);
+			path = URLTests;
+			sourceTree = "<group>";
+		};
 		2E2786D9256710520019B952 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +172,7 @@
 				2ED6FEAB256E6DA700E0ADE4 /* source */,
 				2E2786F9256710530019B952 /* Tests iOS */,
 				2E13C9AC257453DE0057B3E7 /* AuthenticationTests */,
+				2E13C9BE257457770057B3E7 /* URLTests */,
 				2E2786E7256710530019B952 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -156,6 +184,7 @@
 				2E2786F6256710530019B952 /* Tests iOS.xctest */,
 				2ED6FEF4256E857700E0ADE4 /* marvelapp (test).app */,
 				2E13C9AB257453DE0057B3E7 /* AuthenticationTests.xctest */,
+				2E13C9BD257457770057B3E7 /* URLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +288,24 @@
 			productReference = 2E13C9AB257453DE0057B3E7 /* AuthenticationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2E13C9BC257457770057B3E7 /* URLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E13C9C4257457770057B3E7 /* Build configuration list for PBXNativeTarget "URLTests" */;
+			buildPhases = (
+				2E13C9B9257457770057B3E7 /* Sources */,
+				2E13C9BA257457770057B3E7 /* Frameworks */,
+				2E13C9BB257457770057B3E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E13C9C3257457770057B3E7 /* PBXTargetDependency */,
+			);
+			name = URLTests;
+			productName = URLTests;
+			productReference = 2E13C9BD257457770057B3E7 /* URLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2E2786E5256710530019B952 /* marvelapp (pro) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E278710256710530019B952 /* Build configuration list for PBXNativeTarget "marvelapp (pro)" */;
@@ -325,6 +372,10 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 2E2786E5256710530019B952;
 					};
+					2E13C9BC257457770057B3E7 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2E2786E5256710530019B952;
+					};
 					2E2786E5256710530019B952 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -351,12 +402,20 @@
 				2ED6FEE1256E857700E0ADE4 /* marvelapp (test) */,
 				2E2786F5256710530019B952 /* Tests iOS */,
 				2E13C9AA257453DE0057B3E7 /* AuthenticationTests */,
+				2E13C9BC257457770057B3E7 /* URLTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2E13C9A9257453DE0057B3E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E13C9BB257457770057B3E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,6 +457,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E13C9AE257453DE0057B3E7 /* AuthenticationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E13C9B9257457770057B3E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E13C9C0257457770057B3E7 /* URLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +529,11 @@
 			target = 2E2786E5256710530019B952 /* marvelapp (pro) */;
 			targetProxy = 2E13C9B0257453DE0057B3E7 /* PBXContainerItemProxy */;
 		};
+		2E13C9C3257457770057B3E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E2786E5256710530019B952 /* marvelapp (pro) */;
+			targetProxy = 2E13C9C2257457770057B3E7 /* PBXContainerItemProxy */;
+		};
 		2E2786F8256710530019B952 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2E2786E5256710530019B952 /* marvelapp (pro) */;
@@ -506,6 +578,51 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alvaro.exposito.AuthenticationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marvelapp.app/marvelapp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E13C9C5257457770057B3E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZS9LMH6Z2;
+				INFOPLIST_FILE = URLTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alvaro.exposito.URLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marvelapp.app/marvelapp";
+			};
+			name = Debug;
+		};
+		2E13C9C6257457770057B3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZS9LMH6Z2;
+				INFOPLIST_FILE = URLTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alvaro.exposito.URLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -771,6 +888,15 @@
 			buildConfigurations = (
 				2E13C9B3257453DE0057B3E7 /* Debug */,
 				2E13C9B4257453DE0057B3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E13C9C4257457770057B3E7 /* Build configuration list for PBXNativeTarget "URLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E13C9C5257457770057B3E7 /* Debug */,
+				2E13C9C6257457770057B3E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
