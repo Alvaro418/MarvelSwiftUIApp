@@ -59,5 +59,12 @@
 	<string></string>
 	<key>PRIVATE_KEY</key>
 	<string></string>
+	<key>MARVEL_API_URL</key>
+	<dict>
+		<key>DETAIL</key>
+		<string>https://gateway.marvel.com/v1/public/characters</string>
+		<key>LIST</key>
+		<string>https://gateway.marvel.com/v1/public/characters</string>
+	</dict>
 </dict>
 </plist>

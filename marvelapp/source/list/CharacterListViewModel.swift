@@ -8,6 +8,7 @@
 import Combine
 import SwiftUI
 
+/// ViewModel to handle the character list
 class CharacterListViewModel: ObservableObject {
     
     var characterList = PassthroughSubject<[Result],Never>()
@@ -18,13 +19,15 @@ class CharacterListViewModel: ObservableObject {
         getCharacters()
     }
     
+    /// Method used to generate a Request to get the Characters List Information and explore it
     func getCharacters() {
+                        
+        guard var urlCharacterList = URLComponents(string: UrlBase.list.getUrl()) else { return }
+        urlCharacterList.queryItems = Authentication.generateHeaders()
         
-        let url = "https://gateway.marvel.com/v1/public/characters\(Authentication.generateHeaders())";
+        guard let urlCharacterListRequest  = urlCharacterList.url else { return }
         
-        guard let urlValue = URL(string: url) else { return }
-        
-        let publisher = URLSession.shared.dataTaskPublisher(for: urlValue)
+        let publisher = URLSession.shared.dataTaskPublisher(for: urlCharacterListRequest)
             .map { $0.data }
             .decode(type: CharacterListModel.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)

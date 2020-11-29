@@ -8,6 +8,7 @@
 import Combine
 import SwiftUI
 
+/// Character Detail View Model
 class CharacterDetailViewModel: ObservableObject {
     
     var comic = PassthroughSubject<[ComicsItem],Never>()
@@ -18,15 +19,18 @@ class CharacterDetailViewModel: ObservableObject {
     
     var request:AnyCancellable?
     
+    /// Method used to generate a Request to get the Character Information and explore this information
+    /// - Parameter characterID: Unique ID Character
     func getCharacterDetail(characterID: Int?) {
         
         guard let characterID = characterID else { return }
         
-        let url = "https://gateway.marvel.com/v1/public/characters/\(characterID)\(Authentication.generateHeaders())";
+        guard var urlCharacterDetail = URLComponents(string: UrlWithParameters(url: .detail, params: [String(characterID)]).getUrl()) else { return }
+        urlCharacterDetail.queryItems = Authentication.generateHeaders()
         
-        guard let urlValue = URL(string: url) else { return }
+        guard let urlCharacterDetailRequest  = urlCharacterDetail.url else { return }
         
-        let publisher = URLSession.shared.dataTaskPublisher(for: urlValue)
+        let publisher = URLSession.shared.dataTaskPublisher(for: URLRequest(url: urlCharacterDetailRequest))
             .map { $0.data }
             .decode(type: CharacterDetailModel.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
