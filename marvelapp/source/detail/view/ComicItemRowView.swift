@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Row of Comic Object type used to show Comics  / Series / Events / Stories
 struct ComicItemRowView: View {
     
     @State var title: String

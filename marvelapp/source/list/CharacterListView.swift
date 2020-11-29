@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 
+/// Character List View
 struct CharacterListView: View {
     
     @ObservedObject var viewModel = CharacterListViewModel()
@@ -33,6 +34,8 @@ struct CharacterListView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         CharacterListView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+            .previewDisplayName("iPhone 11")
     }
 }
 

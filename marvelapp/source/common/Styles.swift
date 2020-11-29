@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// Standar App image style
 struct ImagenStyle: ViewModifier {
     func body(content: Content) -> some View {
         content

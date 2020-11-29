@@ -17,6 +17,7 @@ enum ThumbnailSize: String {
     case portraitIncredible = "portrait_incredible"
 }
 
+/// ViewModel used to handle Thumbnail Image
 class ThumbnailViewModel: ObservableObject {
     
     var request:AnyCancellable?
