@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>PRIVATE_KEY</key>
-	<string>12345ABCD</string>
-	<key>API_KEY</key>
-	<string>ABCD12345</string>
-	<key>TIMESTAMP</key>
-	<string>123</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

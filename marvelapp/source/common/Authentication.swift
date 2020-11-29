@@ -15,7 +15,7 @@ class Authentication {
     static let timestamp = Bundle.main.object(forInfoDictionaryKey: "TIMESTAMP") as? String
     static let privateKey = Bundle.main.object(forInfoDictionaryKey: "PRIVATE_KEY") as? String
     
-    fileprivate static func generateHash(apiKey: String, timestamp: String, privateKey: String) -> String {
+    static func generateHash(apiKey: String, timestamp: String, privateKey: String) -> String {
         
         let stringToHash = timestamp + privateKey + apiKey
         
